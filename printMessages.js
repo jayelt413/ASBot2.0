@@ -180,13 +180,13 @@ module.exports = {
 
     if(min == undefined){
 
-      return Math.floor(Math.random() * (10000 - 1)) + 1;
+      return Math.floor(Math.random() * (10000)) + 1;
 
     }else if(min != undefined && max !=undefined && next == undefined){
 
       min = Math.ceil(min);
       max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min)) + min;
+      return Math.floor(Math.random() * (max - min + 1)) + min;
 
     }else{
 
